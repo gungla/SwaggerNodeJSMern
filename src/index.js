@@ -25,7 +25,7 @@ const options = {
 
     servers: [
       {
-        url: "https://swagger-mern.herokuapp.com",
+        url: "http://localhost:8000/",
       },
     ],
   },
