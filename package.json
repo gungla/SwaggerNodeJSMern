@@ -5,8 +5,7 @@
   "description": "",
   "main": "data.js",
   "scripts": {
-    "start": "nodemon --exec babel-node src/index.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install npm && run build"
+    "start": "nodemon --exec babel-node src/index.js"
   },
   "keywords": [],
   "author": "",
