@@ -2,8 +2,8 @@ import express from "express";
 import cors from "cors";
 import morgan from "morgan";
 import dotenv from "dotenv";
-import userRouter from "../routes/users";
-import productRouter from '../routes/products';
+import userRouter from "../Routes/users";
+import productRouter from '../Routes/products';
 import swaggerUI from "swagger-ui-express";
 import swaggerJsDoc from "swagger-jsdoc";
 
@@ -25,7 +25,7 @@ const options = {
 
     servers: [
       {
-        url: "http://localhost:3000/",
+        url: "http://localhost:3000",
       },
     ],
   },
