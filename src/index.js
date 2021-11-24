@@ -7,7 +7,7 @@ import productRouter from '../routes/products';
 import swaggerUI from "swagger-ui-express";
 import swaggerJsDoc from "swagger-jsdoc";
 
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 3000;
 dotenv.config();
 
 const app = express();
@@ -25,7 +25,7 @@ const options = {
 
     servers: [
       {
-        url: "http://localhost:8000/",
+        url: "http://localhost:3000/",
       },
     ],
   },
