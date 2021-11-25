@@ -12,7 +12,8 @@
   "author": "",
   "license": "ISC",
   "engines": {
-    "node": "10.x"
+    "node": "6.7.0",
+    "npm": "3.10.3"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
