@@ -6,7 +6,7 @@
   "type": "commonjs",
   "scripts": {
     "start": "nodemon --exec babel-node src/index.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm run build --prefix client"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm run build --prefix"
   },
   "keywords": [],
   "author": "",
