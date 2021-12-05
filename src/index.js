@@ -11,7 +11,10 @@ dotenv.config();
 
 const app = express();
 
-app.use(morgan("dev"));
+if (process.env.NODE_ENV === 'development') {
+  app.use(morgan("dev"));
+}
+
 app.use(cors());
 
 const PORT = process.env.PORT || 3000;
@@ -34,7 +37,7 @@ const options = {
 };
 
 const specs = swaggerJsDoc(options);
-app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(specs));
+app.use("/", swaggerUI.serve, swaggerUI.setup(specs));
 
 app.use("/products", productRouter);
 app.use("/users", userRouter);
