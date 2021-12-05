@@ -7,13 +7,14 @@ import productRouter from '../Routes/products';
 import swaggerUI from "swagger-ui-express";
 import swaggerJsDoc from "swagger-jsdoc";
 
-const PORT = process.env.PORT || 3000;
 dotenv.config();
 
 const app = express();
 
 app.use(morgan("dev"));
 app.use(cors());
+
+const PORT = process.env.PORT || 3000;
 
 const options = {
   definition: {
@@ -25,7 +26,7 @@ const options = {
 
     servers: [
       {
-        url: "http://localhost:3000",
+        url: `http://localhost:${process.env.PORT}`,
       },
     ],
   },
